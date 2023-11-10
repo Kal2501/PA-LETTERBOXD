@@ -49,6 +49,7 @@ akun_user = {
     "Ryan Gosling" : "me"
 }
 
+# Fungsi untuk sign in ke dalam menu
 def sign_in():
     gagal = 0
     while gagal < 3 :
