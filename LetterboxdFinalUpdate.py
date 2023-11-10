@@ -1,5 +1,6 @@
 import os
 
+# Dictionary penampung film
 cinema = {
     'Interstellar': {
         'review': [
@@ -40,20 +41,23 @@ cinema = {
     }
 }
 
+# Dictionary yang menampung akun admin
 akun_admin = {
     "admin" : "admin"
 }
 
+# Dictionary yang menampung akun user
 akun_user = {
     "user" : "user",
     "Ryan Gosling" : "me"
 }
 
+# Fungsi untuk sign in ke dalam program
 def sign_in():
-    gagal = 0
+    gagal = 0        # gagal disini adalah variabel penampung saat nanti pengguna melakukan percobaan sign in
     while gagal < 3 :
-        username=input("Masukkan Username : ")
-        password=input("Masukkan Password : ")
+        username=input("Masukkan Username : ")        # Input untuk username
+        password=input("Masukkan Password : ")        # Input untuk password
         os.system('cls')
         if username in akun_admin.keys() and password in akun_admin.values() :
             print("Sign in berhasil!")
