@@ -49,13 +49,14 @@ akun_user = {
     "Ryan Gosling" : "me"
 }
 
+# Fungsi untuk sign in masuk ke dalam menu
 def sign_in():
-    gagal = 0
+    gagal = 0       # variabel gagal disini berfungsi sebagai variabel penampung seberapa banyak percobaan sign in dilakukan
     while gagal < 3 :
-        username=input("Masukkan Username : ")
-        password=input("Masukkan Password : ")
+        username=input("Masukkan Username : ")        # Input untuk username
+        password=input("Masukkan Password : ")        # Input untuk password
         os.system('cls')
-        if username in akun_admin.keys() and password in akun_admin.values() :
+        if username in akun_admin.keys() and password in akun_admin.values() :        # Apabila username 
             print("Sign in berhasil!")
             while True :
                 konfirmasi=input("Masuk ke Letterboxd? Konfirmasi(y) / Cancel(n) : ")
